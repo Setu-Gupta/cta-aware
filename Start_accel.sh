@@ -1,6 +1,5 @@
 #!/bin/sh
 
-cd /scratch/user/setu/cta-aware
 module load foss/2022a
 module load Boost
 module load Mesa
