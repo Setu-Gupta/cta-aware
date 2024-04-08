@@ -13,6 +13,6 @@ module load GDB/11.1-GCCcore-11.2.0
 export CUDA_INSTALL_PATH=/sw/eb/sw/CUDA/11.7.0
 export PATH=$CUDA_INSTALL_PATH/bin:$PATH
 export LD_LIBRARY_PATH=$CUDA_INSTALL_PATH/lib:$LD_LIBRARY_PATH
-cd accel-sim-framework/
-source ./gpu-simulator/setup_environment.sh
+source ./gpu-simulator/setup_environment.sh debug
+make -j -C ./gpu-simulator/ clean
 make -j -C ./gpu-simulator/
