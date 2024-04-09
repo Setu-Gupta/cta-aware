@@ -36,7 +36,7 @@ else
 fi
 
 if [ ! -d "$ACCELSIM_ROOT/gpgpu-sim" ] ; then
-    git clone https://github.com/Setu-Gupta/gpgpu-sim_cta_aware.git $ACCELSIM_ROOT/gpgpu-sim
+    git clone --branch cta_aware https://github.com/Setu-Gupta/gpgpu-sim_cta_aware.git $ACCELSIM_ROOT/gpgpu-sim
     git -C $ACCELSIM_ROOT/gpgpu-sim/ checkout cta_aware
 fi
 
